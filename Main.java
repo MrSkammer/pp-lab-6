@@ -39,12 +39,14 @@ public class Main {
             if (employee.equals(duplicateIdWorker)) {
                 System.out.println("Worker with duplicate id: " + employee.getName());
             }
+        }
 
-        //for (Employee employee : employees) {
-        //    employee.work();
-        //    System.out.println("- " + employee.getName() + " (ID: " + employee.hashCode() + ", Position: " +
-         //           employee.getPosition() + ", Hire date: " + employee.getHireDate() + ", Salary: " +
-         //           employee.getSalary() + ")");
+        for (Employee employee : employees) {
+           employee.work();
+           System.out.println("- " + employee.getName() + " (ID: " + employee.hashCode() + ", Position: " +
+                   employee.getPosition() + ", Hire date: " + employee.getHireDate() + ", Salary: " +
+                   employee.getSalary() + ")");
+
         }
     }
 }
